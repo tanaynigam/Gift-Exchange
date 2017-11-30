@@ -14,12 +14,13 @@ public class Solution {
     public static boolean verifyExchangeRules(ArrayList<String[]> pairs) {
         return Problem1.verifyExchangeRules(pairs);
     }
+    
     public static void createValidPairs(ArrayList<String[]> family) {
-//        ArrayList<String> members = new ArrayList<String>();
-//        for( String[] val : family)
-//            members.add(val[0]);
-//        ArrayList<String[]> pairs = Problem1.printValidPairs(family);
-//        printList(pairs);
+        ArrayList<String> members = new ArrayList<String>();
+        for( String[] val : family)
+            members.add(val[0]);
+        ArrayList<String[]> pairs = Problem1.computePairs(members);
+        printList(pairs);
     }
 
     //Problem 2:
@@ -29,7 +30,8 @@ public class Solution {
     }
 
     public static void createDebrasPairs(ArrayList<String[]> family) {
-        System.out.println("No Implementation");
+    	ArrayList<String[]> pairs = Problem2.computePairs(family);
+        printList(pairs);
     }
 
     //Problem 3:

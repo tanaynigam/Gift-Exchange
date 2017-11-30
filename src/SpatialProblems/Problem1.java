@@ -89,5 +89,12 @@ public class Problem1 {
 	        }
 	        return false;
 	    }
+	    public static boolean PassesBasicRule(ArrayList<String[]> pairs) {
+	        for(int i=0; i<pairs.size(); i++) {
+	            if(pairs.get(i)[0].equals(pairs.get(i)[1]))
+	                return false;
+	        }
+	        return true;
+	    }
 
 }

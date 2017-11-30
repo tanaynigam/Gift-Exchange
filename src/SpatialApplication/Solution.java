@@ -3,6 +3,8 @@ package SpatialApplication;
 import SpatialProblems.Problem1;
 import SpatialProblems.Problem2;
 import SpatialProblems.Problem3;
+import SpatialProblems.Problem4;
+import SpatialProblems.Problem5;
 
 import java.util.ArrayList;
 
@@ -23,7 +25,7 @@ public class Solution {
     //Problem 2:
     public static boolean verifyDebrasExchangeRules(ArrayList<String[]> pairs,
                                                     ArrayList<String[]> family) {
-        return Problem2.verifyDebrasExchangeRules(pairs, family);
+        return Problem2.verifyProblem2(pairs, family);
     }
 
     public static void createDebrasPairs(ArrayList<String[]> family) {
@@ -44,8 +46,7 @@ public class Solution {
     public static boolean verifyJensExchangeRules(ArrayList<String[]> pairs,
                                                   ArrayList<String[]> family,
                                                   ArrayList<String[]> previouspairs) {
-        System.out.println("No Implementation");
-        return false;
+        return Problem4.verifyJensExchangeRules(pairs, family, previouspairs);
     }
 
     public static void  createJensPairs(ArrayList<String[]> family,
@@ -59,8 +60,7 @@ public class Solution {
                                                        ArrayList<String[]> previouspairs,
                                                        ArrayList<String[]> badpairs,
                                                        ArrayList<String[]> goodpairs) {
-        System.out.println("No Implementation");
-        return false;
+        return Problem5.verifyDebraJensExchangeRules(pairs, family, previouspairs, badpairs, goodpairs);
     }
 
     public static void  createDebraJensPairs(ArrayList<String[]> family,

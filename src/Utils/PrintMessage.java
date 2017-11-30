@@ -10,7 +10,7 @@ public class PrintMessage {
         System.out.println();
         System.out.println("Example:");
         System.out.println("------------------------------------------");
-        System.out.println("java -jar Spatial.jar -p 2.2 -f family.csv");
+        System.out.println("java -jar Spatial.jar -p 2.2 -f \"family.csv\"");
         System.out.println("------------------------------------------");
         System.out.println("Will run the problem no 2 with task no 2");
         System.out.println("family.csv is the file needed to compute this function");
@@ -18,12 +18,12 @@ public class PrintMessage {
         System.out.println("----------------------------------------------");
         System.out.println("Sample inputs for all different valid problems");
         System.out.println("----------------------------------------------");
-        System.out.println("java -jar Spatial.jar -p 1.2 -f family.csv");
-        System.out.println("java -jar Spatial.jar -p 2.2 -f family.csv");
-        System.out.println("java -jar Spatial.jar -p 3.2 -f family.csv");
-        System.out.println("java -jar Spatial.jar -p 4.2 -f family.csv last_years_pairs.csv");
-        System.out.println("java -jar Spatial.jar -p 5.2 -f family.csv last_years_pairs.csv good_list.csv bad_list.csv");
-        System.out.println("java -jar Spatial.jar -p 6.2 -f family.csv last_years_pairs.csv good_list.csv bad_list.csv");
+        System.out.println("java -jar Spatial.jar -p 1.2 -f \"family.csv\"");
+        System.out.println("java -jar Spatial.jar -p 2.2 -f \"family.csv\"");
+        System.out.println("java -jar Spatial.jar -p 3.2 -f \"family.csv\"");
+        System.out.println("java -jar Spatial.jar -p 4.2 -f \"family.csv\" \"last_years_pairs.csv\"");
+        System.out.println("java -jar Spatial.jar -p 5.2 -f \"family.csv\" \"last_years_pairs.csv\" \"good_list.csv\" \"bad_list.csv\"");
+        System.out.println("java -jar Spatial.jar -p 6.2 -f \"family.csv\" \"last_years_pairs.csv\" \"good_list.csv\" \"bad_list.csv\"");
     }
 
     public static void printFailedToExecute() {
